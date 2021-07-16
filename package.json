@@ -3,9 +3,6 @@
   "name": "gatsby",
   "version": "1.0.0",
   "dependencies": {
-    "babel-eslint": "^10.0.0",
-    "chokidar": "^3.5.2",
-    "eslint": "^7.30.0",
     "gatsby": "^3.9.1",
     "gatsby-cli": "^3.9.0",
     "gatsby-image": "^3.9.0",
@@ -22,11 +19,13 @@
   "devDependencies": {
     "@vercel/node": "1.11.1"
   },
+  "peerDependencies": {
+    "typescript": "^4.3.5",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^7.30.0"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build"
-  },
-  "installConfig": {
-    "pnp": true
   }
 }
